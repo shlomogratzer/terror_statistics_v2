@@ -1,6 +1,5 @@
 import express, { Request, Response, NextFunction, query } from "express";
 import {
-  getAllTerrorAttack,
   getAllTerrorAttackByInterval,
   getAllTerrorAttackByIyear,
   getLastTerrorAttack,

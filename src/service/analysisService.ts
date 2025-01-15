@@ -49,6 +49,7 @@ export const getAvgTerrorAttackByRegion = async () => {
     return handleBadRequest("get all error", err);
   }
 };
+
 export const getTerrorAttackByRegion = async (region_txt: string) => {
   try {
     const avgCasualties = await Attack.aggregate([
@@ -198,7 +199,6 @@ export const getAllTerrorAttackByIyear = async (
   limit: number
 ) => {
   const skip = (page - 1) * limit;
-  console.log("by yaer");
 
   try {
     const tAttak = await Attack.find({ iyear })
